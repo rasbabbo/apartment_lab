@@ -7,6 +7,7 @@ function Tenant(name, contact) {
 
 Tenant.prototype.addReference = function(reference){
   // add reference to references
+  this.reference.push(reference);
 };
 
 module.exports = Tenant;
