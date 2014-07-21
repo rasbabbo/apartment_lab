@@ -1,3 +1,4 @@
+var inherits = require("../../src/inherits.js");
 
 
 function Person(name, contact){

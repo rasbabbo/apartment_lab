@@ -16,11 +16,12 @@ describe("manager", function(){
 });
 
 describe('#addProperty', function(){
-	var roper = new Manager('roper', '123-1234');
-	roper.addProperty("beacon");
+	var roper = Manager.addProperty("beacon");
 	it('should reflect the addition of a new prop', function(){
-		expect(roper.properties).to.equal("beacon");
+		expect(roper.properties[0]).to.eql("beacon");
 	});
 });
+
+
 
 // })
